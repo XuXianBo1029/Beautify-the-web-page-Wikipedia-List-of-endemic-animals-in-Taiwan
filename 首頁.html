@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>臺灣動物</title>
+<style>
+body {
+	margin: 0;
+	font-family: Arial;
+	background-image: url("4656e81f6dc57c5.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.f {
+	z-index: 2;
+	list-style-type: none;
+	position: fixed;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	background-color: #404040;
+}
+.s {
+	float: left;
+}
+.s a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+.s a:hover {
+	background-color: black;
+}
+.header {
+	width:100%;
+	background-color:rgba(0, 0, 0,0.8);
+	margin:auto;
+	margin-top: 50px;
+	font-size: 40px;
+	text-align: center;
+	border-bottom: solid;
+	border-width: 4px;
+    border-color: rgba(0, 0, 0,0.8);
+}
+.hd {
+	margin:auto;
+	text-align:center;
+	width:80%;
+}
+.w3-content w3-display-container {width:100%;}
+.mySlides {width:50%;margin:auto;}
+.w3-badge {height:13px;width:13px;padding:0}
+table {
+	margin:auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+tr:hover {
+	background-color: #ddd;
+}
+th, td {
+	border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #00C2F2;
+}
+td {
+	background-color:rgba(255, 255, 255, 0.7);
+}
+.footer {
+	position: relative;
+	color: white;
+    padding: 50px;
+    text-align: center;
+    background: black;
+    margin-top: 20px;
+}
+#WIKI,.footer a {
+	height: 48px;
+    display: block;
+}
+#WIKI {
+    list-style: none;
+    position: absolute;
+    top: 20px;
+	left: 50%;
+    transform: translateX(-50%);
+	width:48px;
+	height: 48px;
+	background: url('https://en.wikipedia.org/static/favicon/wikipedia.ico') 0 0;
+}
+@media (max-width: 700px) {
+	.responsive {
+        width: 49%;
+        margin: 6px 0;
+    }
+    .s {
+	width:50%;
+    }
+	.s a {
+	padding: 7px 8px;
+	}
+	.header {
+	margin-top: 140px;
+	}
+	.mySlides {
+	width:80%;
+	}
+}
+@media (max-width: 400px) {
+	.responsive {
+        width: 100%;
+    }
+    .s {
+	float: none;
+	width:100%;
+    }
+	.s a {
+	padding: 2px 4px;
+	}
+	.header {
+	margin-top: 180px;
+	}
+	.mySlides {
+	width:100%;
+	}
+}
+@media (max-width: 250px) {
+	table {
+	width:100%;
+	}
+	th, td {
+    text-align: none;
+    padding: 0px;
+	}
+	.mySlides {
+	width:100%;
+	}
+}
+</style>
+</head>
+<body >
+<ul class="f">
+  <li class="s"><a style="background-color: #111;">首頁</a></li>
+  <li class="s"><a href="哺乳類.html">哺乳類</a></li>
+  <li class="s"><a href="鳥類.html">鳥類</a></li>
+  <li class="s"><a href="爬蟲類.html">爬蟲類</a></li>
+  <li class="s"><a href="兩棲類.html">兩棲類</a></li>
+  <li class="s"><a href="魚類.html">魚類</a></li>
+  <li class="s"><a href="專案製作人資料.html">專案製作人資料</a></li>
+</ul>
+
+<div class="header">
+  <div class="w3-content w3-display-container" >
+  <img class="mySlides w3-animate-opacity" src="1.jpg" >
+  <img class="mySlides w3-animate-opacity" src="2.jpg" >
+  <img class="mySlides w3-animate-opacity" src="3.jpg" >
+  <img class="mySlides w3-animate-opacity" src="4.jpg" >
+  <img class="mySlides w3-animate-opacity" src="5.jpg" >
+  <img class="mySlides w3-animate-opacity" src="6.jpg" >
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white " onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white " onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white " onclick="currentDiv(3)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white " onclick="currentDiv(4)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white " onclick="currentDiv(5)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white " onclick="currentDiv(6)"></span>
+	</div>
+	<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-middle" style="width:100%">
+	<button class="w3-button w3-display-left w3-black " onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right w3-black " onclick="plusDivs(1)">&#10095;</button>
+	</div>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+<div class="hd">
+      <p style="color:#66ff99;">臺灣特有種列表包括臺灣的特有種與特有亞種，地域上的分布包括臺灣本島、離島（綠島、蘭嶼、澎湖、金門、馬祖）。<br>
+
+臺灣特有種動物在臺灣動物物種中所占的比例：</p>
+</div>
+
+<table>
+  <tr>
+    <th>類別</th>
+    <th>種類</th>
+    <th>特有（亞）種</th>
+	<th>特有（亞）種比例%</th>
+  </tr>
+  <tr>
+    <td>哺乳類</td>
+    <td>70</td>
+    <td>45</td>
+	<td>64</td>
+  </tr>
+  <tr>
+    <td>鳥類</td>
+    <td>450</td>
+    <td>84</td>
+	<td>19</td>
+  </tr>
+  <tr>
+    <td>爬蟲類</td>
+    <td>85</td>
+    <td>27</td>
+	<td>32</tdh>
+  </tr>
+  <tr>
+    <td>兩棲類</td>
+    <td>32</td>
+    <td>10</td>
+	<td>31</td>
+  </tr>
+  <tr>
+    <td>淡水魚類</td>
+    <td>220</td>
+    <td>36</td>
+	<td>16</td>
+  </tr>
+  <tr>
+    <td>蝴蝶</td>
+    <td>400</td>
+    <td>50</td>
+	<td>13</td>
+  </tr>
+  <tr>
+    <td>合 計</td>
+    <td>1257</td>
+    <td>252</td>
+	<td>20</td>
+  </tr>
+</table>
+
+<div class="footer">
+  <div id="WIKI"><a href="https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E5%8B%95%E7%89%A9%E7%89%B9%E6%9C%89%E7%A8%AE%E5%88%97%E8%A1%A8#%E7%9B%B8%E9%97%9C%E9%80%A3%E7%B5%90"></a></div>
+</div>
+
+</body>
+</html>
